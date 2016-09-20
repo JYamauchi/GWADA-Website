@@ -3,7 +3,12 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 @import "compass/reset";
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 
 h1 {
   font-size: 4em;
@@ -15,11 +20,34 @@ body {
 }
 
 #navbar {
-  background-color: grey;
+  padding: 1em 3em;
+  background-color: green;
+
+  ul {
+    display: inline-block;
+  }
+
+  li {
+    display: inline-block;
+  }
 
   // display: inline;
-}
+  a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+  }
 
-#navbar a {
-  color: white;
+  img {
+    height: 50px;
+  }
+
+  .secondary {
+    float: right;
+    right: 0px;
+  }
+
+  .navbar-header {
+    font-size: 2em;
+  }
 }
